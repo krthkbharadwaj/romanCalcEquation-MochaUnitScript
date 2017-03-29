@@ -44,8 +44,8 @@ describe("Equation creator is ", function () {
         it("Create the equation for empty values provided", function () {
             var n1 = c.equation('-C', 'L', '');
             var n2 = c.equation('V', '', 'M');
-            expect(n1).to.equal('Please enter proper number');
-            expect(n2).to.equal('Please enter proper number');
+            expect(n1).to.equal('Please enter valid number');
+            expect(n2).to.equal('Please enter valid number');
         });
         it("Create the equation for non numerics, non roman numerics & special characters", function () {
             var nr1 = c.equation('ret', 'poy', 'abv');
@@ -58,8 +58,8 @@ describe("Equation creator is ", function () {
         it("Negative inputs as roman numericals", function () {
             var nn1 = c.equation('-CX', 'M', '-V');
             var nn2 = c.equation('-XX', '-D', '-L');
-            expect(nn1).to.equal('Please enter proper number');
-            expect(nn2).to.equal('Please enter proper number');
+            expect(nn1).to.equal('Please enter valid number');
+            expect(nn2).to.equal('Please enter valid number');
         });
     });
 });
