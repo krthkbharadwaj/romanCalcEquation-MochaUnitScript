@@ -1,0 +1,20 @@
+{
+  "name": "mocharomantest",
+  "version": "1.0.0",
+  "description": "Unit test script using Mocha",
+  "main": "./test/equation.js",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.15.2",
+    "mocha": "^3.2.0",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}
